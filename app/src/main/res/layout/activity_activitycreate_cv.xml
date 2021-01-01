@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivitycreateCv">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <EditText
+        android:id="@+id/edittextfirstandlastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="type your Name and Last name"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonProfession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="type your profesion"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittextfirstandlastname" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/textViewlabelpersonalinformation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="date of birth nationality,place of birth,addres,phone number,email"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonProfession" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/textViewlabelWxpirience"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="What kind of expirience you have,doesnt matter even you have expirience in moving industry,or driver,you suposted write it,for example if you been taxi driver write comunication with custumers,etc "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewlabelpersonalinformation"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonProfession" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Personall information"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewlabelpersonalinformation" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLinepersonalinfo"
+        android:layout_width="wrap_content"
+        android:hint="type your personal information"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textViewlabeleducation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="what kind of deggre you have bachellors or musters,if not where you learn to this profesion,google,or youtube,and when you started and when you finish your education"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLinepersonalinfo" />
+
+    <EditText
+        android:hint="type your education info here"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        android:id="@+id/editTextTextMultiLineeducations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewlabeleducation" />
+
+    <TextView
+        android:id="@+id/textviewlabellanguages"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="What kind of languages you know,English ,Ruusian,or .."
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLineeducations" />
+
+    <EditText
+        android:hint="type your Languages"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        android:id="@+id/editTextTextMultiLinelanguages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textviewlabellanguages" />
+    <TextView
+        android:id="@+id/textviewlabelskills"
+        android:text="In skill box you must type any skills what you have dont hesitate ,cooking,power point,exel,driving,comunication with peoples"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLinelanguages"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:hint="type your Skills"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        android:id="@+id/editTextTextMultiLineSkills"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textviewlabelskills" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLineexpirience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/textViewlabelWxpirience" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="May be you have awards,sertifacte winner for something,best teacher or best manger"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLineexpirience" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLineawards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        android:hint="type your awards"/>
+
+    <Button
+        android:onClick="onCklickseReadyResume"
+        android:id="@+id/button2cv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonuploadimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Image"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
